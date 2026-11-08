@@ -1,0 +1,6 @@
+model_1,model_2,dm_stat,p_value,dm_stat_nw,p_value_nw
+Transformer (GEW),LSTM (GEW),-13.3096,2.41294e-35,-4.33242,1.74609e-05
+Transformer (GEW),Transformer (pure),-11.8265,5.5275e-29,-4.14001,4.00399e-05
+LSTM (GEW),LSTM (pure),11.3064,7.40502e-27,3.67848,0.000257103
+Transformer (GEW),LSTM (pure),-16.2334,6.6037e-49,-5.44058,7.92692e-08
+Transformer (GEW),"GARCH(1,1)",-6.73588,4.02634e-11,-2.84516,0.00460013

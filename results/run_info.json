@@ -1,0 +1,77 @@
+{
+  "config": {
+    "seed": 42,
+    "normalisation": "train",
+    "data": {
+      "tickers": {
+        "NIFTY": "^NSEI",
+        "SP500": "^GSPC",
+        "KOSPI": "^KS11"
+      },
+      "target_market": "NIFTY",
+      "start": "1995-01-01",
+      "end": "2025-01-01",
+      "rv_window": 60,
+      "lookback": 60,
+      "sigma_burn_in": 50,
+      "econ_clip": 0.1,
+      "feature_clip": 5.0,
+      "train_frac": 0.7,
+      "val_frac": 0.15,
+      "cache_dir": "data"
+    },
+    "lstm": {
+      "hidden_size": 64,
+      "num_layers": 2,
+      "dropout": 0.2,
+      "head_size": 32,
+      "epochs": 20,
+      "lr": 0.001
+    },
+    "transformer": {
+      "d_model": 160,
+      "n_heads": 4,
+      "num_layers": 4,
+      "dim_ff": 320,
+      "dropout": 0.05,
+      "head_size": 64,
+      "max_len": 500,
+      "epochs": 60,
+      "lr": 5e-05,
+      "batch_size": 64,
+      "grad_clip": 1.0
+    },
+    "results_dir": "results"
+  },
+  "timings_seconds": {
+    "data_and_gew_features_s": 0.5,
+    "LSTM (pure)_s": 270.5,
+    "LSTM (GEW)_s": 261.0,
+    "Transformer (pure)_s": 56369.6,
+    "Transformer (GEW)_s": 56586.2,
+    "total_wall_s": 3.5,
+    "sum_of_model_training_s": 113487.3
+  },
+  "data": {
+    "aligned_days": 3937,
+    "first_day": "2007-09-17",
+    "last_day": "2024-12-30",
+    "samples": 3766,
+    "train/val/test": [
+      2636,
+      565,
+      565
+    ],
+    "test_period": [
+      "2022-07-06",
+      "2024-12-30"
+    ]
+  },
+  "environment": {
+    "python": "3.10.4",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "device": "cpu"
+  }
+}

@@ -1,0 +1,11 @@
+# Exact versions used for the results in README.md (Python 3.10, CPU).
+# CPU-only torch wheel: pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+arch==8.0.0
+statsmodels==0.15.0
+yfinance==1.8.0
+torch==2.14.1
+matplotlib==3.10.9
+pytest==9.2.0

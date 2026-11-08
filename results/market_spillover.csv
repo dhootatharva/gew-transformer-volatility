@@ -1,0 +1,7 @@
+,,NIFTY,SP500,KOSPI
+Transformer (GEW),NIFTY,0.2942,0.3080,0.3978
+Transformer (GEW),SP500,0.3159,0.2716,0.4125
+Transformer (GEW),KOSPI,0.3226,0.3228,0.3546
+Transformer (pure),NIFTY,0.3060,0.3443,0.3497
+Transformer (pure),SP500,0.3732,0.2894,0.3374
+Transformer (pure),KOSPI,0.3862,0.3101,0.3037
