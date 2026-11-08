@@ -1,5 +1,10 @@
 # GEW-Transformer: NIFTY 50 realized-volatility forecasting
 
+[![tests](https://github.com/dhootatharva/gew-transformer-volatility/actions/workflows/tests.yml/badge.svg)](https://github.com/dhootatharva/gew-transformer-volatility/actions/workflows/tests.yml)
+![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-CPU-orange)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 A Transformer encoder fed with GARCH(1,1), EGARCH(1,1) and EWMA volatility forecasts ("GEW" features) from NIFTY 50, S&P 500 and KOSPI, compared against econometric baselines, an LSTM, and both networks without the econometric features. MS thesis project, 2026.
 
 ## Results
